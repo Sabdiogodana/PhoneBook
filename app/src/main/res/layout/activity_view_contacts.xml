@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewContactsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPerson"
+            android:layout_width="144dp"
+            android:layout_height="145dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+        <TextView
+            android:id="@+id/tvPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:text="Name"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPerson" />
+
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="60dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgMessage"
+            app:layout_constraintHorizontal_bias="0.56"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imgMessage"
+            app:srcCompat="@drawable/ic_baseline_call_24" />
+
+        <ImageView
+            android:id="@+id/imgMessage"
+            android:layout_width="65dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/imgVideo"
+            app:layout_constraintStart_toEndOf="@+id/imgCall"
+            app:layout_constraintTop_toTopOf="@+id/imgVideo"
+            app:srcCompat="@drawable/ic_baseline_message_24" />
+
+        <ImageView
+            android:id="@+id/imgVideo"
+            android:layout_width="80dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgMessage"
+            app:layout_constraintTop_toBottomOf="@+id/tvPersonName"
+            app:srcCompat="@drawable/ic_baseline_videocam_24" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="8dp"
+            android:text="Call"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMessage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgCall" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="42dp"
+            android:text="Message"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvVideo"
+            app:layout_constraintEnd_toStartOf="@+id/tvVideo"
+            app:layout_constraintTop_toBottomOf="@+id/imgMessage" />
+
+        <TextView
+            android:id="@+id/tvVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="56dp"
+            android:text="Video"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgVideo" />
+
+        <ImageView
+            android:id="@+id/imgNumber"
+            android:layout_width="37dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="72dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPersonNum"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvPersonNum"
+            app:srcCompat="@drawable/ic_baseline_call_24" />
+
+        <ImageView
+            android:id="@+id/imgMap"
+            android:layout_width="42dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="72dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvMap"
+            app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+        <TextView
+            android:id="@+id/tvPersonNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="56dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.092"
+            app:layout_constraintStart_toEndOf="@+id/imgNumber"
+            app:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+
+        <TextView
+            android:id="@+id/tvMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="184dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.037"
+            app:layout_constraintStart_toEndOf="@+id/imgMap" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvPerson"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgMailAddress"
+            android:layout_width="46dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="72dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMailAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvMailAddress"
+            app:srcCompat="@drawable/ic_baseline_email_24" />
+
+        <TextView
+            android:id="@+id/tvMailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="218dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imgMailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/tvPersonNum" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="31dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgPerson"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
